@@ -35,7 +35,7 @@ jobs:
           zip -r -y Payload.zip Payload/Runner.app
           mv Payload.zip Payload.ipa
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: otpapp-artifact
         path: |
